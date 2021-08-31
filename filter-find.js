@@ -53,7 +53,11 @@ Output:
 */
 
 export function getAllDairy(arr) {
-    return [];
+    const result = [];
+    arr.find((origin) => {
+        result.push(origin.category);
+    });
+    return result;
 }
 
 /*
